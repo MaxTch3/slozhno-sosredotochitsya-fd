@@ -18,6 +18,28 @@
   position: relative;
 }
 
+.decorated-zone::before {
+  content: "";
+  block-size: 25px;
+  inline-size: 25px;
+  border-inline-end: 1px solid #FF0070;
+  border-block-start: 1px solid #FF0070;
+  inset-block-start: 10px;
+  inset-inline-end: 10px;
+  position: absolute;
+}
+
+.decorated-zone::after {
+  content: "";
+  block-size: 25px;
+  inline-size: 25px;
+  border-inline-start: 1px solid #FF0070;
+  border-block-end: 1px solid #FF0070;
+  inset-block-end: 10px;
+  inset-inline-start: 10px;
+  position: absolute;
+}
+
 .header__decoration {
   position: absolute;
   display: flex;
@@ -39,24 +61,30 @@
   background: #FF0070;
 }
 
-.decorated-zone::before {
-  content: "";
-  block-size: 25px;
-  inline-size: 25px;
-  border-inline-end: 1px solid #FF0070;
-  border-block-start: 1px solid #FF0070;
-  inset-block-start: 10px;
-  inset-inline-end: 10px;
-  position: absolute;
+.header__theme-menu {
+  align-self: center;
+  justify-self: end;
 }
 
-.decorated-zone::after {
-  content: "";
-  block-size: 25px;
-  inline-size: 25px;
-  border-inline-start: 1px solid #FF0070;
-  border-block-end: 1px solid #FF0070;
-  inset-block-end: 10px;
-  inset-inline-start: 10px;
-  position: absolute;
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #FF0070;
+}
+
+.header__theme-menu-button {
+  color: #FF0070;
+  background: transparent;
+  border: none;
+  text-transform: lowercase;
+  block-size: 26px;
+  line-height: 1;
+  padding: 0 13px 3px;
+  cursor: pointer;
+}
+
+.header__theme-menu-button_active {
+  outline: 1px solid #FF0070;
+  pointer-events: none;
 }
