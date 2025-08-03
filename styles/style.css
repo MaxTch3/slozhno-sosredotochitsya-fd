@@ -1,5 +1,62 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
 .page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  background-image: var(--bg-image);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: var(--bg-color);
+  background-repeat: no-repeat;
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+}
+
+.header {
+  block-size: 100vh;
+  min-block-size: 668px;
+  display: grid;
+  grid-template-rows: 1fr min-content 1fr;
+  padding: 10px;
+  position: relative;
+}
+
+.header__decoration {
+  position: absolute;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  text-transform: uppercase;
+  line-height: 1.39;
+  inset-block-start: 10px;
+  inset-inline-end: 19px;
+  color: #FF0070;
+}
+
+.header__decoration::after {
+  content: "";
+  block-size: 9px;
+  inline-size: 9px;
+  border-radius: 50%;
+  box-shadow: 0 0 4px 2px #FF0070;
+  background: #FF0070;
+}
+
+.decorated-zone::before {
+  content: "";
+  block-size: 25px;
+  inline-size: 25px;
+  border-inline-end: 1px solid #FF0070;
+  border-block-start: 1px solid #FF0070;
+  inset-block-start: 10px;
+  inset-inline-end: 10px;
+  position: absolute;
+}
+
+.decorated-zone::after {
+  content: "";
+  block-size: 25px;
+  inline-size: 25px;
+  border-inline-start: 1px solid #FF0070;
+  border-block-end: 1px solid #FF0070;
+  inset-block-end: 10px;
+  inset-inline-start: 10px;
+  position: absolute;
 }
