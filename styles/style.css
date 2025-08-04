@@ -90,7 +90,7 @@
 }
 
 .header__title {
-  font-size: 116px;
+  font-size: var(--header-title-size);
   color: var(--title-color);
   text-shadow: 4px 4px 0 var(--accent-color);
   line-height: 0.83;
@@ -107,3 +107,5 @@
   background-color: var(--accent-color);
   color: var(--bg-color);
 }
+
+
