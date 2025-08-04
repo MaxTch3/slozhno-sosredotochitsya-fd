@@ -101,6 +101,9 @@
   font-weight: 700;
   line-height: 1.3;
   align-self: center;
+}
+
+.title-decor {
   background-color: var(--accent-color);
   color: var(--bg-color);
 }
