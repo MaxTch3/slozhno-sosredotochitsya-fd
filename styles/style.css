@@ -90,7 +90,7 @@
 }
 
 .header__title {
-  font-size: 116px;
+  font-size: var(--header-title-size);
   color: var(--title-color);
   text-shadow: 4px 4px 0 var(--accent-color);
   line-height: 0.83;
@@ -106,4 +106,74 @@
 .title-decor {
   background-color: var(--accent-color);
   color: var(--bg-color);
+}
+
+.main {
+  padding: 40px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section__title {
+  color: var(--accent-color);
+  line-height: 1.3;
+  font-size: 18px;
+}
+
+.section__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section__card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.section__card-title {
+  line-height: 1.3;
+  font-size: 18px;
+}
+
+.heading-regular {
+  font-weight: 400;
+}
+
+.section__card-text {
+  color: var(--text-color);
+}
+
+.link {
+  text-shadow: 2px 2px 0 var(--accent-color);
+  text-decoration: none;
+}
+
+.section__subtitle {
+  line-height: 1.3;
+  font-size: 18px;
+}
+
+.section-images {
+  gap: 10px;
+}
+
+.section__images-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.section__image {
+  object-fit: cover;
+  inline-size: 100%;
+  block-size: 100%;
 }
