@@ -90,7 +90,7 @@
 }
 
 .header__title {
-  font-size: var(--header-title-size);
+  font-size: var(--title-size);
   color: var(--title-color);
   text-shadow: 4px 4px 0 var(--accent-color);
   line-height: 0.83;
@@ -176,4 +176,22 @@
   object-fit: cover;
   inline-size: 100%;
   block-size: 100%;
+}
+
+.footer {
+  block-size: 100vh;
+  min-block-size: 668px;
+  display: grid;
+  padding: 10px;
+  position: relative;
+}
+
+.footer__title {
+justify-self: center;
+  align-self: center;
+font-size: var(--title-size);
+  color: var(--title-color);
+  text-shadow: 2px 2px 0 var(--accent-color);
+  line-height: 0.83;
+  text-transform: lowercase;
 }
