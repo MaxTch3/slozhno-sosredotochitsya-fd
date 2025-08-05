@@ -7,4 +7,5 @@
   --title-color: #DB00FF;
   --title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --text-color: #F1B2CE;
+  --hover-border-color: rgb(255 0 112 / 0.4);
 }
