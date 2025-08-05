@@ -219,5 +219,154 @@
   text-transform: lowercase;
 }
 
-@media (width >= 768px) {}
-@media (width >=768px) {}
+@media (width >=768px) {
+
+  .header {
+    padding: 20px;
+  }
+
+  .decorated-zone::before {
+    inset-block-start: 20px;
+    inset-inline-end: 20px;
+  }
+
+  .decorated-zone::after {
+    inset-block-end: 20px;
+    inset-inline-start: 20px;
+  }
+
+  .header__decoration {
+    inset-block-start: 20px;
+    inset-inline-end: 29px;
+  }
+
+  .header__title {
+    position: relative;
+    inset-inline-start: -20px;
+  }
+
+  .header__text {
+    inline-size: 50%;
+    justify-self: end;
+  }
+
+  .title-decor {
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+  }
+/* ------------------------------------------------ */
+
+  .main {
+    padding: 40px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .section__title {
+    color: var(--accent-color);
+    line-height: 1.3;
+    font-size: 18px;
+  }
+
+  .section__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .section__card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .section__card-title {
+    line-height: 1.3;
+    font-size: 18px;
+  }
+
+  .heading-regular {
+    font-weight: 400;
+  }
+
+  .section__card-text {
+    color: var(--text-color);
+    line-height: 1.3;
+  }
+
+  .link {
+    text-shadow: 2px 2px 0 var(--accent-color);
+    text-decoration: none;
+  }
+
+  .link:hover {
+    border-block-end: 1px solid var(--text-color);
+  }
+
+  .link:focus {
+    outline: none;
+  }
+
+  .link:focus-visible {
+    outline: 1px solid var(--text-color);
+  }
+
+  .section__subtitle {
+    line-height: 1.3;
+    font-size: 18px;
+  }
+
+  .section-images {
+    gap: 10px;
+  }
+
+  .section__images-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .section__image {
+    inline-size: 100%;
+  }
+
+  .footer {
+    block-size: 100vh;
+    min-block-size: 668px;
+    display: grid;
+    padding: 10px;
+    position: relative;
+  }
+
+  .footer__title {
+    justify-self: center;
+    align-self: center;
+    font-size: var(--title-size);
+    color: var(--title-color);
+    text-shadow: 2px 2px 0 var(--accent-color);
+    line-height: 0.83;
+    text-transform: lowercase;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+@media (width >=1024px) {}

@@ -9,3 +9,10 @@
   --text-color: #F1B2CE;
   --hover-border-color: rgb(255 0 112 / 0.4);
 }
+
+@media (width >=768px) {
+  
+  :root {
+    --title-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+}
