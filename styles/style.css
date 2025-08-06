@@ -1,5 +1,5 @@
 .page {
-  font-family: var(--font-family, monospace);
+  font-family: var(--font-family), monospace;
   font-size: 18px;
   background: var(--bg-color) var(--bg-image) no-repeat center / cover fixed;
 }
@@ -261,15 +261,16 @@
     grid-template-columns: 1fr 2fr;
   }
 
-  .section:nth-child(even) {
+  .section-alt {
     grid-template-columns: 1fr;
   }
 
-  .section:nth-child(even) .section__title {
+  .section-alt .section__title {
     inline-size: calc(33.33% - 20px);
   }
 
   .section-images {
+    grid-template-columns: 1fr;
     gap: 20px;
   }
 
@@ -324,8 +325,16 @@
     grid-template-columns: 315fr 649fr;
   }
 
-  .section:nth-child(even) .section__list {
+  .section-alt {
+    grid-template-columns: 1fr;
+  }
+
+  .section-alt .section__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .section-images {
+    grid-template-columns: 1fr;
   }
 }
